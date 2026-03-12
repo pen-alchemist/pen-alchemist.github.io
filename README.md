@@ -6,7 +6,6 @@
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
     🌓
   </button>
-  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
 
   <a href="https://colyte.pro">
     <img src="https://img.shields.io/badge/🌐_Visit_my_project_website-0D1117?style=for-the-badge&logo=vercel&logoColor=00F2FE&borderColor=00F2FE" alt="Colyte Project Site" />
@@ -105,3 +104,6 @@ Here are my key personal projects and open-source solutions. These cards update 
     <img src="https://img.shields.io/badge/Telegram-0D1117?style=flat-square&logo=telegram&logoColor=00F2FE" alt="Telegram" />
   </a>
 </div>
+
+
+<script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
