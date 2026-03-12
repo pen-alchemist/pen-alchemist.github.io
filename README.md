@@ -84,8 +84,8 @@ Here are my key personal projects and open-source solutions. These cards update 
 
 | Year | Event | Document |
 | :---: | :--- | :--- |
-| **2025** | 💻🛰️ **IT Planet Olympiad**<br><sub>*Track: Practical Programming If Else*</sub> | [📄 Open PDF](./Olympiads/Olympiad_Certificate_IT_Planet_2025_Practical_Programming_If_Else.jpg) |
-| **2025** | 💻🛰️ **IT Planet Olympiad**<br><sub>*Track: Astra Linux*</sub> | [📄 Open PDF](./Olympiads/Olympiad_Certificate_IT_Planet_2025_Astra_Linux.jpg) |
+| **2025** | 💻🛰️ **IT Planet Olympiad**<br><sub>*Track: Practical Programming If Else*</sub> | [📄 Open ](./Olympiads/Olympiad_Certificate_IT_Planet_2025_Practical_Programming_If_Else.jpg) |
+| **2025** | 💻🛰️ **IT Planet Olympiad**<br><sub>*Track: Astra Linux*</sub> | [📄 Open ](./Olympiads/Olympiad_Certificate_IT_Planet_2025_Astra_Linux.jpg) |
 
 <br>
 
