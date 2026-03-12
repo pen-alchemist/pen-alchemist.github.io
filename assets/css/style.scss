@@ -1,0 +1,83 @@
+---
+---
+@import "{{ site.theme }}";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&display=swap');
+
+
+body {
+  background-color: #050508 !important;
+  background-image: 
+    linear-gradient(rgba(0, 242, 254, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 242, 254, 0.07) 1px, transparent 1px) !important;
+  background-size: 40px 40px !important;
+  color: #00f2fe !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  text-shadow: 0 0 3px rgba(0, 242, 254, 0.4);
+}
+
+
+.container {
+  max-width: 900px;
+  background: rgba(5, 5, 8, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Orbitron', sans-serif !important;
+  color: #ff00ff !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #ff00ff, 0 0 15px rgba(255, 0, 255, 0.5) !important;
+  border-bottom: none !important;
+}
+
+
+a {
+  color: #fce300 !important;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(252, 227, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #00f2fe !important;
+  text-shadow: 0 0 10px #00f2fe, 0 0 20px #00f2fe;
+}
+
+
+table {
+  width: 100%;
+  background: rgba(15, 15, 25, 0.6) !important;
+  border: 1px solid #00f2fe !important;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.2) !important;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  margin-top: 20px;
+}
+
+th {
+  background: rgba(0, 242, 254, 0.1) !important;
+  color: #ff00ff !important;
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 500;
+}
+
+th, td {
+  border-bottom: 1px solid rgba(0, 242, 254, 0.2) !important;
+  padding: 12px 15px !important;
+}
+
+
+hr {
+  border: 0 !important;
+  height: 1px !important;
+  background: #ff00ff !important;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff !important;
+  margin: 40px 0 !important;
+}
