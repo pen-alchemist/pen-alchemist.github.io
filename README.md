@@ -12,6 +12,14 @@
 
 ---
 
+<br>
+
+## 📜 My CV 2026
+
+| **2026** | 🚀 **Download my CV**<br><sub></sub> | [📄 Open ](./CV/2026/Yehor Romanov 2026 CV.pdf) |
+
+<br>
+
 ## 💻 My Portfolio (Featured Repositories)
 
 Here are my key personal projects and open-source solutions. These cards update automatically directly from GitHub.
@@ -67,7 +75,7 @@ Here are my key personal projects and open-source solutions. These cards update 
 
 | Issued | Certification Name | Platform / Vendor | Document |
 | :---: | :--- | :--- | :---: |
-| **2026** | 💻⌨️ **Certififcate of Accomplishment**<br><sub>*Software Engineer*</sub> | HackerRank.com | [📄 Open](./SkillCertifications/Certificate_HackerRank.com_Python_Basic.pdf) |
+| **2026** | 💻⌨️ **Certififcate of Accomplishment**<br><sub>*Software Engineer*</sub> | HackerRank.com | [📄 Open](./SkillCertifications/Certificate_HackerRank.com_Software_Engineer.pdf) |
 | **2024** | 🐍⌨️ **Certififcate of Accomplishment**<br><sub>*Python (Basic)*</sub> | HackerRank.com | [📄 Open](./SkillCertifications/Certificate_HackerRank.com_Python_Basic.pdf) |
 
 <br>
