@@ -3,6 +3,11 @@
   <h1>Academic and Professional Achievements of Yehor Romanov (pen-alchemist)</h1>
   <p><b>Archive of certificates, diplomas, and project portfolio</b></p>
 
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    🌓
+  </button>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+
   <a href="https://colyte.pro">
     <img src="https://img.shields.io/badge/🌐_Visit_my_project_website-0D1117?style=for-the-badge&logo=vercel&logoColor=00F2FE&borderColor=00F2FE" alt="Colyte Project Site" />
   </a>
