@@ -56,10 +56,10 @@ Here are my key personal projects and open-source solutions. These cards update 
 
 | Issued | Certification Name | Platform / Vendor | Document |
 | :---: | :--- | :--- | :---: |
-| **2024** | 🤖🕸️ **Machine Learning**<br><sub>*+ Deep Learning*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2024_Machine_Learning.jpg) |
-| **2022** | 🐞🦾 **QA**<br><sub>*Automation*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hille_IT_School_2022_QA_Automation_Python.jpg) |
-| **2020-2021** | 🐍⌨️ **Python**<br><sub>*Introduction*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2020-2021_Introduction_Python.jpg) |
-| **2019-2020** | 🐞💪 **QA**<br><sub>*Manual*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2019-2020_QA Manual.jpg) |
+| **2024** | 🤖🕸️ **Machine Learning**<br><sub>*2nd place in the students rating list*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2024_Machine_Learning.jpg) |
+| **2022** | 🐞🦾 **QA Automation**<br><sub>**</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hille_IT_School_2022_QA_Automation_Python.jpg) |
+| **2020-2021** | 🐍⌨️ **Python Introduction**<br><sub>*3rd place in the students rating list*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2020-2021_Introduction_Python.jpg) |
+| **2019-2020** | 🐞💪 **QA Manual**<br><sub>*1st place in the students rating list*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2019-2020_QA Manual.jpg) |
 
 <br>
 
