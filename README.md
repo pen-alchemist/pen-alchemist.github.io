@@ -1,4 +1,7 @@
 <div align="center">
+  
+  <h1>Academic and Professional Achievements of Yehor Romanov (pen-alchemist)</h1>
+  <p><b>Archive of certificates, diplomas, and project portfolio</b></p>
 
   <div align="center">
     <p><sub>Contact me:</sub></p>
@@ -9,9 +12,6 @@
       <img src="https://img.shields.io/badge/Telegram-0D1117?style=flat-square&logo=telegram&logoColor=00F2FE" alt="Telegram" />
     </a>
   </div>
-  
-  <h1>Academic and Professional Achievements of Yehor Romanov (pen-alchemist)</h1>
-  <p><b>Archive of certificates, diplomas, and project portfolio</b></p>
 
   <a href="https://colyte.pro">
     <img src="https://img.shields.io/badge/🌐_Visit_my_project_website-0D1117?style=for-the-badge&logo=vercel&logoColor=00F2FE&borderColor=00F2FE" alt="Colyte Project Site" />
