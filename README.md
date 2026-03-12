@@ -3,10 +3,6 @@
   <h1>Academic and Professional Achievements of Yehor Romanov (pen-alchemist)</h1>
   <p><b>Archive of certificates, diplomas, and project portfolio</b></p>
 
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-    🌓
-  </button>
-
   <a href="https://colyte.pro">
     <img src="https://img.shields.io/badge/🌐_Visit_my_project_website-0D1117?style=for-the-badge&logo=vercel&logoColor=00F2FE&borderColor=00F2FE" alt="Colyte Project Site" />
   </a>
@@ -61,7 +57,7 @@ Here are my key personal projects and open-source solutions. These cards update 
 | Issued | Certification Name | Platform / Vendor | Document |
 | :---: | :--- | :--- | :---: |
 | **2024** | 🤖🕸️ **Machine Learning**<br><sub>*2nd place in the students rating list*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2024_Machine_Learning.jpg) |
-| **2022** | 🐞🦾 **QA Automation**<br><sub>**</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hille_IT_School_2022_QA_Automation_Python.jpg) |
+| **2022** | 🐞🦾 **QA Automation**<br><sub></sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hille_IT_School_2022_QA_Automation_Python.jpg) |
 | **2020-2021** | 🐍⌨️ **Python Introduction**<br><sub>*3rd place in the students rating list*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2020-2021_Introduction_Python.jpg) |
 | **2019-2020** | 🐞💪 **QA Manual**<br><sub>*1st place in the students rating list*</sub> | Hillel IT School | [📄 Open](./Courses/Course_Certificate_Hillel_IT_School_2019-2020_QA Manual.jpg) |
 
@@ -104,6 +100,3 @@ Here are my key personal projects and open-source solutions. These cards update 
     <img src="https://img.shields.io/badge/Telegram-0D1117?style=flat-square&logo=telegram&logoColor=00F2FE" alt="Telegram" />
   </a>
 </div>
-
-
-<script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
