@@ -1,5 +1,3 @@
----
----
 @import "{{ site.theme }}";
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
 
@@ -157,10 +155,10 @@ hr {
 
 @media (max-width: 768px) {
   .wrapper, .container {
-    padding: 18px 15px !important;
-    margin: 15px auto !important;
+    padding: 12px 10px !important;
+    margin: 8px auto !important;
     border-radius: 12px !important;
-    width: 92.5% !important;
+    width: 96% !important;
   }
 
   h1 {
@@ -169,7 +167,7 @@ hr {
 
   h2 {
     font-size: 1.4rem !important;
-    margin-top: 1.1em !important;
+    margin-top: 0.8em !important;
   }
 
   table {
@@ -179,7 +177,7 @@ hr {
   }
 
   th, td {
-    padding: 9px !important;
+    padding: 6px 8px !important;
     font-size: 0.85rem !important;
     white-space: normal !important;
   }
