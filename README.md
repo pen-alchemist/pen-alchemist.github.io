@@ -1,4 +1,14 @@
 <div align="center">
+
+  <div align="center">
+    <p><sub>Contact me:</sub></p>
+    <a href="mailto:yehor.romanov7@gmail.com">
+      <img src="https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=00F2FE" alt="Email" />
+    </a>
+    <a href="https://t.me/w_linux">
+      <img src="https://img.shields.io/badge/Telegram-0D1117?style=flat-square&logo=telegram&logoColor=00F2FE" alt="Telegram" />
+    </a>
+  </div>
   
   <h1>Academic and Professional Achievements of Yehor Romanov (pen-alchemist)</h1>
   <p><b>Archive of certificates, diplomas, and project portfolio</b></p>
