@@ -1,20 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
 
+:root {
+  --bg-color: #05070a;
+  --container-bg: #0d1117;
+  --text-main: #cbd5e1;
+  --text-muted: #8b949e;
+  --border-color: #30363d;
+  --accent-blue: #4facfe;
+  --accent-cyan: #00f2fe;
+  --table-header: #161b22;
+  --table-hover: #161b22;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f8fafc;
+    --container-bg: #ffffff;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --accent-blue: #2563eb;
+    --accent-cyan: #0284c7;
+    --table-header: #f1f5f9;
+    --table-hover: #f8fafc;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
 body {
-  background-color: #05070a !important;
-  color: #cbd5e1 !important;
+  background-color: var(--bg-color) !important;
+  color: var(--text-main) !important;
   font-family: 'Plus Jakarta Sans', sans-serif !important;
   line-height: 1.7;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .wrapper, .container {
   max-width: 900px !important;
-  background: #0d1117 !important;
+  background: var(--container-bg) !important;
   padding: 40px 50px !important;
   margin: 50px auto !important;
   border-radius: 16px !important;
-  border: 1px solid #30363d !important;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 20px 50px var(--shadow-color) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 h1, h2, h3 {
@@ -23,7 +53,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800 !important;
@@ -31,8 +61,8 @@ h1 {
 }
 
 h2 {
-  color: #00f2fe !important;
-  border-bottom: 1px solid #30363d !important;
+  color: var(--accent-cyan) !important;
+  border-bottom: 1px solid var(--border-color) !important;
   padding-bottom: 12px !important;
   margin-top: 2em !important;
   font-weight: 700 !important;
@@ -48,13 +78,20 @@ h2::before {
 }
 
 a {
-  color: #4facfe !important;
+  color: var(--accent-blue) !important;
   transition: all 0.3s ease !important;
 }
 
 a:hover {
-  color: #00f2fe !important;
-  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+  color: var(--accent-cyan) !important;
+  text-shadow: 0 0 10px var(--accent-cyan);
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    text-shadow: none;
+    text-decoration: underline !important;
+  }
 }
 
 table {
@@ -62,14 +99,14 @@ table {
   border-collapse: separate !important;
   border-spacing: 0 !important;
   margin-top: 25px !important;
-  border: 1px solid #30363d !important;
+  border: 1px solid var(--border-color) !important;
   border-radius: 12px !important;
   overflow: hidden !important;
 }
 
 th {
-  background-color: #161b22 !important;
-  color: #8b949e !important;
+  background-color: var(--table-header) !important;
+  color: var(--text-muted) !important;
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
@@ -77,19 +114,20 @@ th {
 }
 
 td {
-  background-color: #0d1117 !important;
+  background-color: var(--container-bg) !important;
   padding: 16px !important;
-  border-bottom: 1px solid #30363d !important;
+  border-bottom: 1px solid var(--border-color) !important;
   font-size: 0.95rem !important;
+  transition: background-color 0.2s ease;
 }
 
 tr:hover td {
-  background-color: #161b22 !important;
+  background-color: var(--table-hover) !important;
 }
 
 code, pre {
   font-family: 'JetBrains Mono', monospace !important;
-  background: #161b22 !important;
+  background: var(--table-header) !important;
   border-radius: 4px;
 }
 
@@ -105,5 +143,5 @@ img:hover {
 hr {
   border: 0 !important;
   height: 1px !important;
-  background: linear-gradient(90deg, transparent, #30363d, transparent) !important;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent) !important;
 }
