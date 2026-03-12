@@ -155,10 +155,10 @@ hr {
 
 @media (max-width: 768px) {
   .wrapper, .container {
-    padding: 12px 10px !important;
+    padding: 10px 8px !important;
     margin: 8px auto !important;
     border-radius: 12px !important;
-    width: 96% !important;
+    width: 92.5% !important;
   }
 
   h1 {
@@ -167,17 +167,19 @@ hr {
 
   h2 {
     font-size: 1.4rem !important;
-    margin-top: 0.8em !important;
+    margin-top: 0.6em !important;
+    padding-bottom: 6px !important;
   }
 
   table {
     display: table !important;
+    margin-top: 12px !important;
     white-space: normal !important;
     word-break: break-word !important;
   }
 
   th, td {
-    padding: 6px 8px !important;
+    padding: 5px !important;
     font-size: 0.85rem !important;
     white-space: normal !important;
   }
