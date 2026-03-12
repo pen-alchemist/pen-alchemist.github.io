@@ -1,3 +1,6 @@
+---
+---
+@import "{{ site.theme }}";
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
 
 :root {
@@ -25,6 +28,11 @@
     --table-header: #f1f5f9;
     --table-hover: #f8fafc;
     --shadow-color: rgba(0, 0, 0, 0.08);
+  }
+  
+  a:hover {
+    text-shadow: none !important;
+    text-decoration: underline !important;
   }
 }
 
@@ -85,13 +93,6 @@ a {
 a:hover {
   color: var(--accent-cyan) !important;
   text-shadow: 0 0 10px var(--accent-cyan);
-}
-
-@media (prefers-color-scheme: light) {
-  a:hover {
-    text-shadow: none;
-    text-decoration: underline !important;
-  }
 }
 
 table {
