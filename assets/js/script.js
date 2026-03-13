@@ -33,15 +33,72 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
+        typeTerminalRow(entry.target);
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1, rootMargin: "0px 0px -20px 0px" });
 
-  document.querySelectorAll('tr').forEach((card, index) => {
-    card.style.transitionDelay = `${(index % 2) * 0.15}s`;
-    observer.observe(card);
+  document.querySelectorAll('tr').forEach((row, index) => {
+    row.style.transitionDelay = `${(index % 2) * 0.15}s`;
+    
+    const cells = Array.from(row.querySelectorAll('td'));
+    const cellData = cells.map(td => {
+      const link = td.querySelector('a');
+      const text = td.textContent.trim();
+      const href = link ? link.getAttribute('href') : null;
+      td.innerHTML = '';
+      return { td, text, href };
+    });
+    
+    row._terminalData = cellData;
+    observer.observe(row);
   });
+
+  function typeTerminalRow(row) {
+    const data = row._terminalData;
+    if (!data) return;
+
+    let cIdx = 0;
+    let cCh = 0;
+    const cur = document.createElement('span');
+    cur.className = 'cursor';
+
+    const typeNext = () => {
+      if (cIdx >= data.length) {
+        if (cur.parentNode) cur.parentNode.removeChild(cur);
+        return;
+      }
+
+      const curData = data[cIdx];
+      const td = curData.td;
+
+      if (cCh < curData.text.length) {
+        td.innerHTML = '';
+        const textToType = curData.text.substring(0, cCh + 1);
+        
+        if (curData.href) {
+          const a = document.createElement('a');
+          a.href = curData.href;
+          a.textContent = textToType;
+          td.appendChild(a);
+        } else {
+          td.appendChild(document.createTextNode(textToType));
+        }
+        
+        td.appendChild(cur);
+        cCh++;
+        setTimeout(typeNext, Math.random() * 20 + 10);
+      } else {
+        cIdx++;
+        cCh = 0;
+        setTimeout(typeNext, 150);
+      }
+    };
+
+    const delay = (parseFloat(row.style.transitionDelay) || 0) * 1000 + 400;
+    setTimeout(typeNext, delay);
+  }
 
   const terminal = document.querySelector('div[align="center"]:first-of-type');
   if (terminal) {
