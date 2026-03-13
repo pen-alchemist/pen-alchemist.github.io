@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yehor Romanov - Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <div align="center">
@@ -143,6 +143,6 @@
       <img src="https://img.shields.io/badge/Telegram-0D1117?style=flat-square&logo=telegram&logoColor=00F2FE" alt="Telegram" />
     </a>
   </div>
-  <script src="./script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
