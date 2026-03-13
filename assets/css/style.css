@@ -121,43 +121,58 @@ sub {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: 2rem 0;
-  background-color: var(--surface-color);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: var(--shadow-elevation);
-  table-layout: fixed;
+  background: transparent;
+  box-shadow: none;
 }
 
-th, td {
-  padding: 1.2rem;
-  text-align: left;
-  border-bottom: 1px solid var(--border-color);
-  word-wrap: break-word;
+thead {
+  display: none;
 }
 
-th {
-  background-color: var(--surface-color);
-  font-weight: 700;
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--border-color);
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-tr:nth-child(even) {
-  background-color: var(--bg-color);
+tbody {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 tr {
-  transition: background-color 0.2s ease;
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-elevation);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 tr:hover {
-  background-color: var(--table-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: var(--surface-color);
+}
+
+td {
+  display: block;
+  padding: 0.8rem 0;
+  text-align: center!important;
+  border-bottom: 1px dashed var(--border-color);
+  word-wrap: break-word;
+}
+
+td:first-child {
+  font-weight: 700;
+  color: var(--text-muted);
+  padding-top: 0;
+}
+
+td:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: auto; 
 }
 
 div[align="center"] {
@@ -240,12 +255,6 @@ div[align="center"]:has(a > img[src*="github-readme-stats"]) img {
   div[align="center"]:has(a > img[src*="github-readme-stats"]) a {
     flex: 1 1 100%;
     max-width: 100%;
-  }
-  
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
   }
   
   #theme-toggle-btn {
