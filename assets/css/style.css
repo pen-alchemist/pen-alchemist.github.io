@@ -139,73 +139,33 @@ tbody {
 }
 
 tr {
-  position: relative;
-  background-color: #0a0e14!important;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-elevation);
   display: flex;
   flex-direction: column;
-  padding: 3.5rem 1.5rem 1.5rem 1.5rem;
-  transition: box-shadow 0.3s ease;
-  border: 1px solid #1c2128!important;
-  opacity: 0;
-  transform: translateY(30px) scale(0.98);
-  overflow: hidden;
-}
-
-tr::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 28px;
-  background-color: #161b22;
-  border-bottom: 1px solid #1c2128;
-  z-index: 1;
-}
-
-tr::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 12px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ff5f56;
-  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
-  z-index: 2;
-}
-
-tr.show {
-  animation: terminalOpen 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-}
-
-@keyframes terminalOpen {
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  padding: 1.5rem;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 tr:hover {
-  box-shadow: 0 8px 24px rgba(0, 255, 0, 0.15);
-  background-color: #0d1117!important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: var(--surface-color);
 }
 
 td {
   display: block;
   padding: 0.8rem 0;
   text-align: center!important;
-  border-bottom: 1px dashed #1c2128!important;
+  border-bottom: 1px dashed var(--border-color);
   word-wrap: break-word;
-  color: #00ff00!important;
 }
 
 td:first-child {
   font-weight: 700;
-  color: #00F2FE!important;
+  color: var(--text-muted);
   padding-top: 0;
 }
 
@@ -213,14 +173,6 @@ td:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-top: auto; 
-}
-
-tr a {
-  color: #00F2FE!important;
-}
-
-tr a:hover {
-  color: #00ff00!important;
 }
 
 div[align="center"] {
@@ -289,21 +241,6 @@ div[align="center"]:has(a > img[src*="github-readme-stats"]) img {
   width: 1.5rem;
   height: 1.5rem;
   fill: currentColor;
-}
-
-.cursor {
-  display: inline-block;
-  width: 10px;
-  height: 1.2em;
-  background-color: currentColor;
-  vertical-align: bottom;
-  margin-left: 5px;
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
 }
 
 @media (max-width: 768px) {
