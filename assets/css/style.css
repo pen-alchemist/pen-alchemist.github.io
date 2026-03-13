@@ -1,39 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
 
 :root {
-  --bg-color: #050d14;
-  --surface-color: #0a1520;
-  --text-main: #00ff00;
-  --text-muted: #00cc99;
-  --accent-color: #00F2FE;
-  --accent-hover: #00ff00;
-  --border-color: #003344;
-  --table-hover: #0b1d2e;
-  --shadow-elevation: 0 10px 30px rgba(0, 255, 0, 0.1);
+  --bg-color: #F6F8FA;
+  --surface-color: #FFFFFF;
+  --text-main: #24292F;
+  --text-muted: #57606A;
+  --accent-color: #0066CC;
+  --accent-hover: #0055AA;
+  --border-color: #D0D7DE;
+  --table-hover: #F3F4F6;
+  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0D1117;
+    --surface-color: #161B22;
+    --text-main: #C9D1D9;
+    --text-muted: #8B949E;
+    --accent-color: #00F2FE;
+    --accent-hover: #00C4D0;
+    --border-color: #30363D;
+    --table-hover: #1C2128;
+    --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
 }
 
 [data-theme="light"] {
-  --bg-color: #050d14;
-  --surface-color: #0a1520;
-  --text-main: #00ff00;
-  --text-muted: #00cc99;
-  --accent-color: #00F2FE;
-  --accent-hover: #00ff00;
-  --border-color: #003344;
-  --table-hover: #0b1d2e;
-  --shadow-elevation: 0 10px 30px rgba(0, 255, 0, 0.1);
+  --bg-color: #F6F8FA;
+  --surface-color: #FFFFFF;
+  --text-main: #24292F;
+  --text-muted: #57606A;
+  --accent-color: #0066CC;
+  --accent-hover: #0055AA;
+  --border-color: #D0D7DE;
+  --table-hover: #F3F4F6;
+  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="dark"] {
-  --bg-color: #050d14;
-  --surface-color: #0a1520;
-  --text-main: #00ff00;
-  --text-muted: #00cc99;
+  --bg-color: #0D1117;
+  --surface-color: #161B22;
+  --text-main: #C9D1D9;
+  --text-muted: #8B949E;
   --accent-color: #00F2FE;
-  --accent-hover: #00ff00;
-  --border-color: #003344;
-  --table-hover: #0b1d2e;
-  --shadow-elevation: 0 10px 30px rgba(0, 255, 0, 0.2);
+  --accent-hover: #00C4D0;
+  --border-color: #30363D;
+  --table-hover: #1C2128;
+  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -126,16 +140,16 @@ tbody {
 
 tr {
   position: relative;
-  background-color: var(--surface-color);
+  background-color: #0a0e14!important;
   border-radius: 8px;
-  box-shadow: var(--shadow-elevation);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   padding: 3.5rem 1.5rem 1.5rem 1.5rem;
   transition: box-shadow 0.3s ease;
-  border: 1px solid var(--border-color);
+  border: 1px solid #1c2128!important;
   opacity: 0;
-  transform: translateY(30px) scale(0.95);
+  transform: translateY(30px) scale(0.98);
   overflow: hidden;
 }
 
@@ -146,8 +160,8 @@ tr::before {
   left: 0;
   right: 0;
   height: 28px;
-  background-color: #021a24;
-  border-bottom: 1px solid var(--border-color);
+  background-color: #161b22;
+  border-bottom: 1px solid #1c2128;
   z-index: 1;
 }
 
@@ -159,8 +173,8 @@ tr::after {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #0055ff;
-  box-shadow: 20px 0 0 #00F2FE, 40px 0 0 #00ff00;
+  background-color: #ff5f56;
+  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
   z-index: 2;
 }
 
@@ -176,21 +190,22 @@ tr.show {
 }
 
 tr:hover {
-  box-shadow: 0 8px 24px rgba(0, 255, 0, 0.2);
-  background-color: var(--table-hover);
+  box-shadow: 0 8px 24px rgba(0, 255, 0, 0.15);
+  background-color: #0d1117!important;
 }
 
 td {
   display: block;
   padding: 0.8rem 0;
   text-align: center!important;
-  border-bottom: 1px dashed var(--border-color);
+  border-bottom: 1px dashed #1c2128!important;
   word-wrap: break-word;
+  color: #00ff00!important;
 }
 
 td:first-child {
   font-weight: 700;
-  color: var(--accent-color);
+  color: #00F2FE!important;
   padding-top: 0;
 }
 
@@ -198,6 +213,14 @@ td:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-top: auto; 
+}
+
+tr a {
+  color: #00F2FE!important;
+}
+
+tr a:hover {
+  color: #00ff00!important;
 }
 
 div[align="center"] {
@@ -259,7 +282,7 @@ div[align="center"]:has(a > img[src*="github-readme-stats"]) img {
 
 #theme-toggle-btn:hover {
   transform: scale(1.1);
-  border-color: var(--text-main);
+  border-color: var(--accent-color);
 }
 
 #theme-toggle-btn svg {
@@ -272,7 +295,7 @@ div[align="center"]:has(a > img[src*="github-readme-stats"]) img {
   display: inline-block;
   width: 10px;
   height: 1.2em;
-  background-color: var(--text-main);
+  background-color: currentColor;
   vertical-align: bottom;
   margin-left: 5px;
   animation: blink 1s step-end infinite;
