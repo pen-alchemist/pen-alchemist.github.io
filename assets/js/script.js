@@ -56,4 +56,43 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('tr').forEach(card => {
     observer.observe(card);
   });
+
+  const tH1 = document.querySelector('body > div[align="center"]:first-of-type > h1');
+  const tP = document.querySelector('body > div[align="center"]:first-of-type > p');
+  
+  if (tH1 && tP) {
+    const tB = tP.querySelector('b');
+    if (tB) {
+      const txt1 = tH1.innerText;
+      const txt2 = tB.innerText;
+      
+      tH1.innerHTML = '<span class="cursor"></span>';
+      tB.innerText = '';
+      tH1.classList.add('active');
+      tP.classList.add('active');
+      
+      let i = 0;
+      const t1 = () => {
+        if (i < txt1.length) {
+          tH1.innerHTML = txt1.substring(0, i + 1) + '<span class="cursor"></span>';
+          i++;
+          setTimeout(t1, 40);
+        } else {
+          tH1.innerHTML = txt1;
+          tB.innerHTML = '<span class="cursor"></span>';
+          
+          let j = 0;
+          const t2 = () => {
+            if (j < txt2.length) {
+              tB.innerHTML = txt2.substring(0, j + 1) + '<span class="cursor"></span>';
+              j++;
+              setTimeout(t2, 40);
+            }
+          };
+          setTimeout(t2, 200);
+        }
+      };
+      setTimeout(t1, 400);
+    }
+  }
 });
