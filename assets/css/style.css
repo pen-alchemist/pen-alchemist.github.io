@@ -115,6 +115,31 @@ body > div[align="center"]:first-of-type sub {
   color: #C9D1D9;
 }
 
+body > div[align="center"]:first-of-type > h1,
+body > div[align="center"]:first-of-type > p {
+  opacity: 0;
+}
+
+body > div[align="center"]:first-of-type > h1.active,
+body > div[align="center"]:first-of-type > p.active {
+  opacity: 1;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: #00F2FE;
+  vertical-align: middle;
+  margin-left: 5px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 h1, h2, h3 {
   color: var(--accent-color);
   font-weight: 800;
@@ -159,9 +184,9 @@ sub {
 }
 
 table {
+  display: block;
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
   margin: 2rem 0;
   background: transparent;
   box-shadow: none;
@@ -175,6 +200,7 @@ tbody {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  width: 100%;
 }
 
 tr {
@@ -185,6 +211,7 @@ tr {
   padding: 1.5rem;
   border: 1px solid var(--border-color);
   height: 100%;
+  width: 100%;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background-color 0.3s ease;
@@ -204,6 +231,7 @@ tr.show:hover {
 
 td {
   display: block;
+  width: 100%;
   padding: 0.8rem 0;
   text-align: center!important;
   border-bottom: 1px dashed var(--border-color);
