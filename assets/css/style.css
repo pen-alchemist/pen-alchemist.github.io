@@ -145,8 +145,15 @@ tr {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
   border: 1px solid var(--border-color);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+tr.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 tr:hover {
@@ -241,6 +248,21 @@ div[align="center"]:has(a > img[src*="github-readme-stats"]) img {
   width: 1.5rem;
   height: 1.5rem;
   fill: currentColor;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background-color: var(--accent-color);
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 @media (max-width: 768px) {
