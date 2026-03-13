@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
 
 :root {
+  color-scheme: light dark;
   --bg-color: #05070a;
   --container-bg: #0d1117;
   --text-main: #cbd5e1;
@@ -10,8 +11,8 @@
   --accent-blue: #4facfe;
   --accent-cyan: #00f2fe;
   --table-header: #161b22;
-  --table-hover: #1c2128;
-  --shadow-color: rgba(0, 0, 0, 0.6);
+  --table-hover: #161b22;
+  --shadow-color: rgba(0, 0, 0, 0.5);
   --glow-spread: rgba(0, 242, 254, 0.15);
 }
 
@@ -25,9 +26,14 @@
     --accent-blue: #2563eb;
     --accent-cyan: #0284c7;
     --table-header: #f1f5f9;
-    --table-hover: #e2e8f0;
+    --table-hover: #f8fafc;
     --shadow-color: rgba(0, 0, 0, 0.08);
     --glow-spread: rgba(37, 99, 235, 0.15);
+  }
+
+  a:hover {
+    text-shadow: none!important;
+    text-decoration: underline!important;
   }
 }
 
@@ -105,7 +111,7 @@ body::after {
   background: var(--accent-blue);
 }
 
-p, li, span, div, strong, b, em, i {
+p, li, span, div, blockquote, strong, b, em, i {
   color: var(--text-main)!important;
 }
 
@@ -156,10 +162,12 @@ section {
   gap: 24px;
 }
 
-section > *, table {
-  animation: scroll-reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 5% cover 15%;
+@supports (animation-timeline: view()) {
+  section > *, table {
+    animation: scroll-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 15%;
+  }
 }
 
 section > * {
