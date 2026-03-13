@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
 
 :root {
-  --bg-color: #F6F8FA;
-  --surface-color: #FFFFFF;
-  --text-main: #24292F;
-  --text-muted: #57606A;
-  --accent-color: #0066CC;
-  --accent-hover: #0055AA;
-  --border-color: #D0D7DE;
-  --table-hover: #F3F4F6;
-  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --bg-color: #D5D8DC;
+  --surface-color: #EAECEE;
+  --text-main: #212F3D;
+  --text-muted: #5D6D7E;
+  --accent-color: #2874A6;
+  --accent-hover: #1A5276;
+  --border-color: #ABB2B9;
+  --table-hover: #CCD1D1;
+  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,15 +27,15 @@
 }
 
 [data-theme="light"] {
-  --bg-color: #F6F8FA;
-  --surface-color: #FFFFFF;
-  --text-main: #24292F;
-  --text-muted: #57606A;
-  --accent-color: #0066CC;
-  --accent-hover: #0055AA;
-  --border-color: #D0D7DE;
-  --table-hover: #F3F4F6;
-  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --bg-color: #D5D8DC;
+  --surface-color: #EAECEE;
+  --text-main: #212F3D;
+  --text-muted: #5D6D7E;
+  --accent-color: #2874A6;
+  --accent-hover: #1A5276;
+  --border-color: #ABB2B9;
+  --table-hover: #CCD1D1;
+  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
