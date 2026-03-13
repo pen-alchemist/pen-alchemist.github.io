@@ -31,62 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!localStorage.getItem(STORAGE_KEY)) updateInterface(event.matches? 'dark' : 'light');
   });
 
-  const typeNode = (node, onComplete) => {
-    const textNodes =;
-    const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null, false);
-    let currentNode;
-
-    while (currentNode = walker.nextNode()) {
-      if (currentNode.nodeValue.trim()!== "") {
-        textNodes.push({
-          node: currentNode,
-          original: currentNode.nodeValue,
-          length: 0
-        });
-        currentNode.nodeValue = "";
-      }
-    }
-
-    let index = 0;
-
-    const processNextChar = () => {
-      if (index >= textNodes.length) {
-        if (onComplete) onComplete();
-        return;
-      }
-
-      const currentData = textNodes[index];
-
-      if (currentData.length < currentData.original.length) {
-        currentData.length++;
-        currentData.node.nodeValue = currentData.original.substring(0, currentData.length);
-        setTimeout(processNextChar, 10 + Math.random() * 20);
-      } else {
-        index++;
-        setTimeout(processNextChar, 15);
-      }
-    };
-
-    processNextChar();
-  };
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
-        
-        const cursor = document.createElement('span');
-        cursor.className = 'cursor';
-        entry.target.appendChild(cursor);
-
-        typeNode(entry.target, () => {});
-        
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1, rootMargin: "0px 0px -20px 0px" });
 
   document.querySelectorAll('tr').forEach((card, index) => {
+    card.style.transitionDelay = `${(index % 2) * 0.15}s`;
     observer.observe(card);
   });
 
