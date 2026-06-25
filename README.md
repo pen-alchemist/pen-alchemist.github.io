@@ -62,14 +62,6 @@ Here are my key personal projects and open-source solutions. These cards update 
 
 <br>
 
-## 📜 Professional Certifications
-
-| Issued | Certification Name | Platform / Vendor | Document |
-| :---: | :--- | :--- | :---: |
-| **2026** | 🐞💪 **ISTQB**<br><sub>*Foundation Level*</sub> | ISTQB | IN PROGRESS... |
-
-<br>
-
 ## 🎓 Professional Courses
 
 | Issued | Certification Name | Platform / Vendor | Document |
